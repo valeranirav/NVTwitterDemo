@@ -1,0 +1,1090 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D09631E26CC1F9800EC8F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09631D26CC1F9800EC8F5E /* AppDelegate.swift */; };
+		4D09632026CC1F9800EC8F5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09631F26CC1F9800EC8F5E /* SceneDelegate.swift */; };
+		4D09632526CC1F9800EC8F5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D09632326CC1F9800EC8F5E /* Main.storyboard */; };
+		4D09632726CC1F9C00EC8F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D09632626CC1F9C00EC8F5E /* Assets.xcassets */; };
+		4D09632A26CC1F9C00EC8F5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D09632826CC1F9C00EC8F5E /* LaunchScreen.storyboard */; };
+		4D09633526CC1F9D00EC8F5E /* NVTwitterDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09633426CC1F9D00EC8F5E /* NVTwitterDemoTests.swift */; };
+		4D09634026CC1F9D00EC8F5E /* NVTwitterDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09633F26CC1F9D00EC8F5E /* NVTwitterDemoUITests.swift */; };
+		4D09635526CC211400EC8F5E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09635426CC211400EC8F5E /* Reachability.swift */; };
+		4D09635726CC213F00EC8F5E /* NVAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09635626CC213F00EC8F5E /* NVAlertController.swift */; };
+		4D09635926CC216A00EC8F5E /* NVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09635826CC216900EC8F5E /* NVError.swift */; };
+		4D09635B26CC220200EC8F5E /* NVTweetListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09635A26CC220200EC8F5E /* NVTweetListConfigurator.swift */; };
+		4D09635D26CC221C00EC8F5E /* NVTweetListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09635C26CC221C00EC8F5E /* NVTweetListInteractor.swift */; };
+		4D09635F26CC223600EC8F5E /* NVTweetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09635E26CC223600EC8F5E /* NVTweetListPresenter.swift */; };
+		4D09636126CC225000EC8F5E /* NVTweetListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09636026CC225000EC8F5E /* NVTweetListRouter.swift */; };
+		4D09636326CC226700EC8F5E /* NVTweetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09636226CC226700EC8F5E /* NVTweetListView.swift */; };
+		4D09636526CC228A00EC8F5E /* NVTweetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09636426CC228A00EC8F5E /* NVTweetListViewController.swift */; };
+		4D09636726CC229F00EC8F5E /* NVTweetListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09636626CC229F00EC8F5E /* NVTweetListWorker.swift */; };
+		4D09636926CC268900EC8F5E /* NVConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09636826CC268900EC8F5E /* NVConstants.swift */; };
+		4D09636B26CC2DA300EC8F5E /* NVRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09636A26CC2DA300EC8F5E /* NVRequestFactory.swift */; };
+		4D09636D26CC2DF200EC8F5E /* NVRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09636C26CC2DF200EC8F5E /* NVRequestHandler.swift */; };
+		4D09636F26CC2F2000EC8F5E /* NVRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09636E26CC2F2000EC8F5E /* NVRequestService.swift */; };
+		4D09637126CC350B00EC8F5E /* NVTweetRuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09637026CC350B00EC8F5E /* NVTweetRuleModel.swift */; };
+		4D09637326CC3C0A00EC8F5E /* NVFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09637226CC3C0A00EC8F5E /* NVFeedModel.swift */; };
+		4D09637626CCD68000EC8F5E /* NVTweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D09637526CCD67F00EC8F5E /* NVTweetCell.swift */; };
+		4D91421E26D39E5600E7A56E /* NVTweetListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91421D26D39E5600E7A56E /* NVTweetListInteractorTests.swift */; };
+		4D91422026D39E7F00E7A56E /* NVTweetListWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91421F26D39E7F00E7A56E /* NVTweetListWorkerTests.swift */; };
+		4D91422526D39EC200E7A56E /* NVTweetListWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91422426D39EC200E7A56E /* NVTweetListWorkerMock.swift */; };
+		4D91422726D39F6300E7A56E /* NVTweetListPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91422626D39F6300E7A56E /* NVTweetListPresenterMock.swift */; };
+		4D91422926D39FDC00E7A56E /* NVTweetListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91422826D39FDC00E7A56E /* NVTweetListInteractorMock.swift */; };
+		4D91422B26D3A08800E7A56E /* NVTweetListViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91422A26D3A08800E7A56E /* NVTweetListViewControllerMock.swift */; };
+		4D91422D26D3A14700E7A56E /* NVTweetListRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91422C26D3A14700E7A56E /* NVTweetListRouterMock.swift */; };
+		4D91423526D3CA5E00E7A56E /* NVTwitterServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91423426D3CA5E00E7A56E /* NVTwitterServiceMock.swift */; };
+		4D91423926D3CB2B00E7A56E /* NVAddRuleRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91423826D3CB2B00E7A56E /* NVAddRuleRequestTests.swift */; };
+		4D91423B26D3CC2500E7A56E /* NVGetRuleRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91423A26D3CC2500E7A56E /* NVGetRuleRequestTests.swift */; };
+		4D91423D26D3CC8600E7A56E /* NVDeleteRuleRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91423C26D3CC8600E7A56E /* NVDeleteRuleRequestTests.swift */; };
+		4D91423F26D3CD0400E7A56E /* NVConnectStreamRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91423E26D3CD0400E7A56E /* NVConnectStreamRequestTests.swift */; };
+		4DFD9B6726CE795A00827DA0 /* NVMapConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B6626CE795A00827DA0 /* NVMapConfigurator.swift */; };
+		4DFD9B6926CE79C000827DA0 /* NVMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B6826CE79C000827DA0 /* NVMapInteractor.swift */; };
+		4DFD9B6B26CE79D000827DA0 /* NVMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B6A26CE79D000827DA0 /* NVMapView.swift */; };
+		4DFD9B6D26CE79E700827DA0 /* NVMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B6C26CE79E700827DA0 /* NVMapRouter.swift */; };
+		4DFD9B6F26CE79FB00827DA0 /* NVMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B6E26CE79FB00827DA0 /* NVMapPresenter.swift */; };
+		4DFD9B7126CE7A1800827DA0 /* NVMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B7026CE7A1800827DA0 /* NVMapViewController.swift */; };
+		4DFD9B7326CE7A4400827DA0 /* NVMapWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B7226CE7A4400827DA0 /* NVMapWorker.swift */; };
+		4DFD9B7526CE817600827DA0 /* FileManager+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B7426CE817600827DA0 /* FileManager+Utilities.swift */; };
+		4DFD9B7726CE8C6E00827DA0 /* NVTweetParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B7626CE8C6E00827DA0 /* NVTweetParseHelper.swift */; };
+		4DFD9B7826D14E1D00827DA0 /* MockTweets.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFD9B6426CE6CC600827DA0 /* MockTweets.json */; };
+		4DFD9B7B26D1538A00827DA0 /* NVTweetLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B7A26D1538A00827DA0 /* NVTweetLocation.swift */; };
+		4DFD9B7E26D27D2100827DA0 /* NVAddRuleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B7D26D27D2100827DA0 /* NVAddRuleRequest.swift */; };
+		4DFD9B8026D27D5100827DA0 /* NVApiRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B7F26D27D5100827DA0 /* NVApiRequestProtocol.swift */; };
+		4DFD9B8426D28BF800827DA0 /* NVTwitterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B8326D28BF800827DA0 /* NVTwitterService.swift */; };
+		4DFD9B8626D2A39300827DA0 /* NVGetRuleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B8526D2A39300827DA0 /* NVGetRuleRequest.swift */; };
+		4DFD9B8826D2CD9700827DA0 /* NVDeleteRuleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B8726D2CD9700827DA0 /* NVDeleteRuleRequest.swift */; };
+		4DFD9B8A26D2CF6100827DA0 /* NVConnectStreamRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B8926D2CF6100827DA0 /* NVConnectStreamRequest.swift */; };
+		4DFD9B8E26D388F500827DA0 /* MockTweets.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFD9B6426CE6CC600827DA0 /* MockTweets.json */; };
+		4DFD9B9026D3891D00827DA0 /* NVTweetParseHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B8F26D3891D00827DA0 /* NVTweetParseHelperTests.swift */; };
+		4DFD9B9226D38A9800827DA0 /* MockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD9B9126D38A9800827DA0 /* MockHelper.swift */; };
+		4DFD9B9426D38DD900827DA0 /* IncorrectMockTweets.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFD9B9326D38DD900827DA0 /* IncorrectMockTweets.json */; };
+		BF31D6F1749D934A486E3EC4 /* Pods_NVTwitterDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE17BF27CB170A9F5E1094DB /* Pods_NVTwitterDemoTests.framework */; };
+		E416DE05D0ED938ED55D2900 /* Pods_NVTwitterDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBC455A01AC71A4AFBC3281 /* Pods_NVTwitterDemo.framework */; };
+		FE31899E335EEBB2E3EAD0B7 /* Pods_NVTwitterDemo_NVTwitterDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB307E300E509294A9DA5FA /* Pods_NVTwitterDemo_NVTwitterDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D09633126CC1F9D00EC8F5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D09631226CC1F9700EC8F5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D09631926CC1F9700EC8F5E;
+			remoteInfo = NVTwitterDemo;
+		};
+		4D09633C26CC1F9D00EC8F5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D09631226CC1F9700EC8F5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D09631926CC1F9700EC8F5E;
+			remoteInfo = NVTwitterDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1806E848CB015955BE2AB0F0 /* Pods-NVTwitterDemo-NVTwitterDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVTwitterDemo-NVTwitterDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-NVTwitterDemo-NVTwitterDemoUITests/Pods-NVTwitterDemo-NVTwitterDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D09631A26CC1F9800EC8F5E /* NVTwitterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVTwitterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D09631D26CC1F9800EC8F5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D09631F26CC1F9800EC8F5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4D09632426CC1F9800EC8F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D09632626CC1F9C00EC8F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D09632926CC1F9C00EC8F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D09632B26CC1F9C00EC8F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D09633026CC1F9D00EC8F5E /* NVTwitterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVTwitterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D09633426CC1F9D00EC8F5E /* NVTwitterDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTwitterDemoTests.swift; sourceTree = "<group>"; };
+		4D09633626CC1F9D00EC8F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D09633B26CC1F9D00EC8F5E /* NVTwitterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVTwitterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D09633F26CC1F9D00EC8F5E /* NVTwitterDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTwitterDemoUITests.swift; sourceTree = "<group>"; };
+		4D09634126CC1F9D00EC8F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D09635426CC211400EC8F5E /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4D09635626CC213F00EC8F5E /* NVAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVAlertController.swift; sourceTree = "<group>"; };
+		4D09635826CC216900EC8F5E /* NVError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVError.swift; sourceTree = "<group>"; };
+		4D09635A26CC220200EC8F5E /* NVTweetListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListConfigurator.swift; sourceTree = "<group>"; };
+		4D09635C26CC221C00EC8F5E /* NVTweetListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListInteractor.swift; sourceTree = "<group>"; };
+		4D09635E26CC223600EC8F5E /* NVTweetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListPresenter.swift; sourceTree = "<group>"; };
+		4D09636026CC225000EC8F5E /* NVTweetListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListRouter.swift; sourceTree = "<group>"; };
+		4D09636226CC226700EC8F5E /* NVTweetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListView.swift; sourceTree = "<group>"; };
+		4D09636426CC228A00EC8F5E /* NVTweetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListViewController.swift; sourceTree = "<group>"; };
+		4D09636626CC229F00EC8F5E /* NVTweetListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListWorker.swift; sourceTree = "<group>"; };
+		4D09636826CC268900EC8F5E /* NVConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVConstants.swift; sourceTree = "<group>"; };
+		4D09636A26CC2DA300EC8F5E /* NVRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVRequestFactory.swift; sourceTree = "<group>"; };
+		4D09636C26CC2DF200EC8F5E /* NVRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVRequestHandler.swift; sourceTree = "<group>"; };
+		4D09636E26CC2F2000EC8F5E /* NVRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVRequestService.swift; sourceTree = "<group>"; };
+		4D09637026CC350B00EC8F5E /* NVTweetRuleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetRuleModel.swift; sourceTree = "<group>"; };
+		4D09637226CC3C0A00EC8F5E /* NVFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVFeedModel.swift; sourceTree = "<group>"; };
+		4D09637526CCD67F00EC8F5E /* NVTweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetCell.swift; sourceTree = "<group>"; };
+		4D91421D26D39E5600E7A56E /* NVTweetListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListInteractorTests.swift; sourceTree = "<group>"; };
+		4D91421F26D39E7F00E7A56E /* NVTweetListWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListWorkerTests.swift; sourceTree = "<group>"; };
+		4D91422426D39EC200E7A56E /* NVTweetListWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListWorkerMock.swift; sourceTree = "<group>"; };
+		4D91422626D39F6300E7A56E /* NVTweetListPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListPresenterMock.swift; sourceTree = "<group>"; };
+		4D91422826D39FDC00E7A56E /* NVTweetListInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListInteractorMock.swift; sourceTree = "<group>"; };
+		4D91422A26D3A08800E7A56E /* NVTweetListViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListViewControllerMock.swift; sourceTree = "<group>"; };
+		4D91422C26D3A14700E7A56E /* NVTweetListRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetListRouterMock.swift; sourceTree = "<group>"; };
+		4D91423426D3CA5E00E7A56E /* NVTwitterServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVTwitterServiceMock.swift; sourceTree = "<group>"; };
+		4D91423826D3CB2B00E7A56E /* NVAddRuleRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVAddRuleRequestTests.swift; sourceTree = "<group>"; };
+		4D91423A26D3CC2500E7A56E /* NVGetRuleRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVGetRuleRequestTests.swift; sourceTree = "<group>"; };
+		4D91423C26D3CC8600E7A56E /* NVDeleteRuleRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVDeleteRuleRequestTests.swift; sourceTree = "<group>"; };
+		4D91423E26D3CD0400E7A56E /* NVConnectStreamRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVConnectStreamRequestTests.swift; sourceTree = "<group>"; };
+		4DFD9B6426CE6CC600827DA0 /* MockTweets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockTweets.json; sourceTree = "<group>"; };
+		4DFD9B6626CE795A00827DA0 /* NVMapConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVMapConfigurator.swift; sourceTree = "<group>"; };
+		4DFD9B6826CE79C000827DA0 /* NVMapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVMapInteractor.swift; sourceTree = "<group>"; };
+		4DFD9B6A26CE79D000827DA0 /* NVMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVMapView.swift; sourceTree = "<group>"; };
+		4DFD9B6C26CE79E700827DA0 /* NVMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVMapRouter.swift; sourceTree = "<group>"; };
+		4DFD9B6E26CE79FB00827DA0 /* NVMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVMapPresenter.swift; sourceTree = "<group>"; };
+		4DFD9B7026CE7A1800827DA0 /* NVMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVMapViewController.swift; sourceTree = "<group>"; };
+		4DFD9B7226CE7A4400827DA0 /* NVMapWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVMapWorker.swift; sourceTree = "<group>"; };
+		4DFD9B7426CE817600827DA0 /* FileManager+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Utilities.swift"; sourceTree = "<group>"; };
+		4DFD9B7626CE8C6E00827DA0 /* NVTweetParseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetParseHelper.swift; sourceTree = "<group>"; };
+		4DFD9B7A26D1538A00827DA0 /* NVTweetLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetLocation.swift; sourceTree = "<group>"; };
+		4DFD9B7D26D27D2100827DA0 /* NVAddRuleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVAddRuleRequest.swift; sourceTree = "<group>"; };
+		4DFD9B7F26D27D5100827DA0 /* NVApiRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVApiRequestProtocol.swift; sourceTree = "<group>"; };
+		4DFD9B8326D28BF800827DA0 /* NVTwitterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTwitterService.swift; sourceTree = "<group>"; };
+		4DFD9B8526D2A39300827DA0 /* NVGetRuleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVGetRuleRequest.swift; sourceTree = "<group>"; };
+		4DFD9B8726D2CD9700827DA0 /* NVDeleteRuleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVDeleteRuleRequest.swift; sourceTree = "<group>"; };
+		4DFD9B8926D2CF6100827DA0 /* NVConnectStreamRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVConnectStreamRequest.swift; sourceTree = "<group>"; };
+		4DFD9B8F26D3891D00827DA0 /* NVTweetParseHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTweetParseHelperTests.swift; sourceTree = "<group>"; };
+		4DFD9B9126D38A9800827DA0 /* MockHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHelper.swift; sourceTree = "<group>"; };
+		4DFD9B9326D38DD900827DA0 /* IncorrectMockTweets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IncorrectMockTweets.json; sourceTree = "<group>"; };
+		624D3C9E6599F1547175DBF9 /* Pods-NVTwitterDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVTwitterDemoTests.release.xcconfig"; path = "Target Support Files/Pods-NVTwitterDemoTests/Pods-NVTwitterDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CBC455A01AC71A4AFBC3281 /* Pods_NVTwitterDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NVTwitterDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB307E300E509294A9DA5FA /* Pods_NVTwitterDemo_NVTwitterDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NVTwitterDemo_NVTwitterDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9152A34F736B3EA93020C75B /* Pods-NVTwitterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVTwitterDemo.release.xcconfig"; path = "Target Support Files/Pods-NVTwitterDemo/Pods-NVTwitterDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BE17BF27CB170A9F5E1094DB /* Pods_NVTwitterDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NVTwitterDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19C3E457D57C64B3EFFD3BB /* Pods-NVTwitterDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVTwitterDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-NVTwitterDemoTests/Pods-NVTwitterDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFA091EE97CB287EE399F0F9 /* Pods-NVTwitterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVTwitterDemo.debug.xcconfig"; path = "Target Support Files/Pods-NVTwitterDemo/Pods-NVTwitterDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F00A286A3A5EF9E22FED1DA3 /* Pods-NVTwitterDemo-NVTwitterDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVTwitterDemo-NVTwitterDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-NVTwitterDemo-NVTwitterDemoUITests/Pods-NVTwitterDemo-NVTwitterDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D09631726CC1F9700EC8F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E416DE05D0ED938ED55D2900 /* Pods_NVTwitterDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D09632D26CC1F9D00EC8F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF31D6F1749D934A486E3EC4 /* Pods_NVTwitterDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D09633826CC1F9D00EC8F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE31899E335EEBB2E3EAD0B7 /* Pods_NVTwitterDemo_NVTwitterDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D09631126CC1F9700EC8F5E = {
+			isa = PBXGroup;
+			children = (
+				4D09631C26CC1F9800EC8F5E /* NVTwitterDemo */,
+				4D09633326CC1F9D00EC8F5E /* NVTwitterDemoTests */,
+				4D09633E26CC1F9D00EC8F5E /* NVTwitterDemoUITests */,
+				4D09631B26CC1F9800EC8F5E /* Products */,
+				F09496C492E680C9F298830A /* Pods */,
+				94AAD4A5B32EE9EAA2858068 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D09631B26CC1F9800EC8F5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D09631A26CC1F9800EC8F5E /* NVTwitterDemo.app */,
+				4D09633026CC1F9D00EC8F5E /* NVTwitterDemoTests.xctest */,
+				4D09633B26CC1F9D00EC8F5E /* NVTwitterDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D09631C26CC1F9800EC8F5E /* NVTwitterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4D09636826CC268900EC8F5E /* NVConstants.swift */,
+				4D09635226CC20F700EC8F5E /* Helper */,
+				4D09635326CC20F700EC8F5E /* Models */,
+				4DFD9B6326CE6BA700827DA0 /* Resources */,
+				4D09635026CC20F700EC8F5E /* Scenes */,
+				4D09634D26CC20F700EC8F5E /* Service */,
+				4D09631D26CC1F9800EC8F5E /* AppDelegate.swift */,
+				4D09631F26CC1F9800EC8F5E /* SceneDelegate.swift */,
+				4DFD9B8B26D2D39900827DA0 /* UI */,
+				4D09632B26CC1F9C00EC8F5E /* Info.plist */,
+			);
+			path = NVTwitterDemo;
+			sourceTree = "<group>";
+		};
+		4D09633326CC1F9D00EC8F5E /* NVTwitterDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D91423626D3CB1900E7A56E /* Service */,
+				4D91422126D39E9000E7A56E /* Mocks */,
+				4D91421A26D39E2200E7A56E /* Scenes */,
+				4DFD9B8D26D388E900827DA0 /* Helper */,
+				4D09633426CC1F9D00EC8F5E /* NVTwitterDemoTests.swift */,
+				4D09633626CC1F9D00EC8F5E /* Info.plist */,
+			);
+			path = NVTwitterDemoTests;
+			sourceTree = "<group>";
+		};
+		4D09633E26CC1F9D00EC8F5E /* NVTwitterDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D09633F26CC1F9D00EC8F5E /* NVTwitterDemoUITests.swift */,
+				4D09634126CC1F9D00EC8F5E /* Info.plist */,
+			);
+			path = NVTwitterDemoUITests;
+			sourceTree = "<group>";
+		};
+		4D09634D26CC20F700EC8F5E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4D09634E26CC20F700EC8F5E /* Result */,
+				4D09634F26CC20F700EC8F5E /* Network */,
+				4DFD9B8326D28BF800827DA0 /* NVTwitterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4D09634E26CC20F700EC8F5E /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				4D09635826CC216900EC8F5E /* NVError.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		4D09634F26CC20F700EC8F5E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4DFD9B7C26D27CED00827DA0 /* API Requests */,
+				4D09636A26CC2DA300EC8F5E /* NVRequestFactory.swift */,
+				4D09636C26CC2DF200EC8F5E /* NVRequestHandler.swift */,
+				4D09636E26CC2F2000EC8F5E /* NVRequestService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4D09635026CC20F700EC8F5E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4DFD9B6526CE793900827DA0 /* Map */,
+				4D09635126CC20F700EC8F5E /* TweetList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4D09635126CC20F700EC8F5E /* TweetList */ = {
+			isa = PBXGroup;
+			children = (
+				4D09637426CCD65800EC8F5E /* Custom Cells */,
+				4D09635A26CC220200EC8F5E /* NVTweetListConfigurator.swift */,
+				4D09635C26CC221C00EC8F5E /* NVTweetListInteractor.swift */,
+				4D09635E26CC223600EC8F5E /* NVTweetListPresenter.swift */,
+				4D09636026CC225000EC8F5E /* NVTweetListRouter.swift */,
+				4D09636226CC226700EC8F5E /* NVTweetListView.swift */,
+				4D09636426CC228A00EC8F5E /* NVTweetListViewController.swift */,
+				4D09636626CC229F00EC8F5E /* NVTweetListWorker.swift */,
+			);
+			path = TweetList;
+			sourceTree = "<group>";
+		};
+		4D09635226CC20F700EC8F5E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4D09635426CC211400EC8F5E /* Reachability.swift */,
+				4D09635626CC213F00EC8F5E /* NVAlertController.swift */,
+				4DFD9B7426CE817600827DA0 /* FileManager+Utilities.swift */,
+				4DFD9B7626CE8C6E00827DA0 /* NVTweetParseHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4D09635326CC20F700EC8F5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D09637026CC350B00EC8F5E /* NVTweetRuleModel.swift */,
+				4D09637226CC3C0A00EC8F5E /* NVFeedModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D09637426CCD65800EC8F5E /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4D09637526CCD67F00EC8F5E /* NVTweetCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		4D91421A26D39E2200E7A56E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4D91421C26D39E2200E7A56E /* TweetList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4D91421C26D39E2200E7A56E /* TweetList */ = {
+			isa = PBXGroup;
+			children = (
+				4D91421D26D39E5600E7A56E /* NVTweetListInteractorTests.swift */,
+				4D91421F26D39E7F00E7A56E /* NVTweetListWorkerTests.swift */,
+			);
+			path = TweetList;
+			sourceTree = "<group>";
+		};
+		4D91422126D39E9000E7A56E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4D91423326D3CA5E00E7A56E /* Service */,
+				4D91422326D39EB400E7A56E /* TweetList */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4D91422326D39EB400E7A56E /* TweetList */ = {
+			isa = PBXGroup;
+			children = (
+				4D91422426D39EC200E7A56E /* NVTweetListWorkerMock.swift */,
+				4D91422626D39F6300E7A56E /* NVTweetListPresenterMock.swift */,
+				4D91422826D39FDC00E7A56E /* NVTweetListInteractorMock.swift */,
+				4D91422A26D3A08800E7A56E /* NVTweetListViewControllerMock.swift */,
+				4D91422C26D3A14700E7A56E /* NVTweetListRouterMock.swift */,
+			);
+			path = TweetList;
+			sourceTree = "<group>";
+		};
+		4D91423326D3CA5E00E7A56E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4D91423426D3CA5E00E7A56E /* NVTwitterServiceMock.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4D91423626D3CB1900E7A56E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4D91423726D3CB1900E7A56E /* Requests */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4D91423726D3CB1900E7A56E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				4D91423826D3CB2B00E7A56E /* NVAddRuleRequestTests.swift */,
+				4D91423A26D3CC2500E7A56E /* NVGetRuleRequestTests.swift */,
+				4D91423C26D3CC8600E7A56E /* NVDeleteRuleRequestTests.swift */,
+				4D91423E26D3CD0400E7A56E /* NVConnectStreamRequestTests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		4DFD9B6326CE6BA700827DA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D09632626CC1F9C00EC8F5E /* Assets.xcassets */,
+				4DFD9B6426CE6CC600827DA0 /* MockTweets.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4DFD9B6526CE793900827DA0 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4DFD9B7926D1520E00827DA0 /* Annotation */,
+				4DFD9B6626CE795A00827DA0 /* NVMapConfigurator.swift */,
+				4DFD9B6826CE79C000827DA0 /* NVMapInteractor.swift */,
+				4DFD9B6E26CE79FB00827DA0 /* NVMapPresenter.swift */,
+				4DFD9B6C26CE79E700827DA0 /* NVMapRouter.swift */,
+				4DFD9B6A26CE79D000827DA0 /* NVMapView.swift */,
+				4DFD9B7026CE7A1800827DA0 /* NVMapViewController.swift */,
+				4DFD9B7226CE7A4400827DA0 /* NVMapWorker.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		4DFD9B7926D1520E00827DA0 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				4DFD9B7A26D1538A00827DA0 /* NVTweetLocation.swift */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		4DFD9B7C26D27CED00827DA0 /* API Requests */ = {
+			isa = PBXGroup;
+			children = (
+				4DFD9B7F26D27D5100827DA0 /* NVApiRequestProtocol.swift */,
+				4DFD9B7D26D27D2100827DA0 /* NVAddRuleRequest.swift */,
+				4DFD9B8526D2A39300827DA0 /* NVGetRuleRequest.swift */,
+				4DFD9B8726D2CD9700827DA0 /* NVDeleteRuleRequest.swift */,
+				4DFD9B8926D2CF6100827DA0 /* NVConnectStreamRequest.swift */,
+			);
+			path = "API Requests";
+			sourceTree = "<group>";
+		};
+		4DFD9B8B26D2D39900827DA0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4D09632826CC1F9C00EC8F5E /* LaunchScreen.storyboard */,
+				4D09632326CC1F9800EC8F5E /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4DFD9B8D26D388E900827DA0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4DFD9B9326D38DD900827DA0 /* IncorrectMockTweets.json */,
+				4DFD9B8F26D3891D00827DA0 /* NVTweetParseHelperTests.swift */,
+				4DFD9B9126D38A9800827DA0 /* MockHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		94AAD4A5B32EE9EAA2858068 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CBC455A01AC71A4AFBC3281 /* Pods_NVTwitterDemo.framework */,
+				8EB307E300E509294A9DA5FA /* Pods_NVTwitterDemo_NVTwitterDemoUITests.framework */,
+				BE17BF27CB170A9F5E1094DB /* Pods_NVTwitterDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F09496C492E680C9F298830A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFA091EE97CB287EE399F0F9 /* Pods-NVTwitterDemo.debug.xcconfig */,
+				9152A34F736B3EA93020C75B /* Pods-NVTwitterDemo.release.xcconfig */,
+				F00A286A3A5EF9E22FED1DA3 /* Pods-NVTwitterDemo-NVTwitterDemoUITests.debug.xcconfig */,
+				1806E848CB015955BE2AB0F0 /* Pods-NVTwitterDemo-NVTwitterDemoUITests.release.xcconfig */,
+				E19C3E457D57C64B3EFFD3BB /* Pods-NVTwitterDemoTests.debug.xcconfig */,
+				624D3C9E6599F1547175DBF9 /* Pods-NVTwitterDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D09631926CC1F9700EC8F5E /* NVTwitterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D09634426CC1F9D00EC8F5E /* Build configuration list for PBXNativeTarget "NVTwitterDemo" */;
+			buildPhases = (
+				F6FC7F820E82F32BBDBFB16C /* [CP] Check Pods Manifest.lock */,
+				4D09631626CC1F9700EC8F5E /* Sources */,
+				4D09631726CC1F9700EC8F5E /* Frameworks */,
+				4D09631826CC1F9700EC8F5E /* Resources */,
+				4DFD9B8C26D2D60B00827DA0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NVTwitterDemo;
+			productName = NVTwitterDemo;
+			productReference = 4D09631A26CC1F9800EC8F5E /* NVTwitterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D09632F26CC1F9D00EC8F5E /* NVTwitterDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D09634726CC1F9D00EC8F5E /* Build configuration list for PBXNativeTarget "NVTwitterDemoTests" */;
+			buildPhases = (
+				3671788D32CB3AC6E74FDB0B /* [CP] Check Pods Manifest.lock */,
+				4D09632C26CC1F9D00EC8F5E /* Sources */,
+				4D09632D26CC1F9D00EC8F5E /* Frameworks */,
+				4D09632E26CC1F9D00EC8F5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D09633226CC1F9D00EC8F5E /* PBXTargetDependency */,
+			);
+			name = NVTwitterDemoTests;
+			productName = NVTwitterDemoTests;
+			productReference = 4D09633026CC1F9D00EC8F5E /* NVTwitterDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D09633A26CC1F9D00EC8F5E /* NVTwitterDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D09634A26CC1F9D00EC8F5E /* Build configuration list for PBXNativeTarget "NVTwitterDemoUITests" */;
+			buildPhases = (
+				9D8EAE80E780912B8DD590D9 /* [CP] Check Pods Manifest.lock */,
+				4D09633726CC1F9D00EC8F5E /* Sources */,
+				4D09633826CC1F9D00EC8F5E /* Frameworks */,
+				4D09633926CC1F9D00EC8F5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D09633D26CC1F9D00EC8F5E /* PBXTargetDependency */,
+			);
+			name = NVTwitterDemoUITests;
+			productName = NVTwitterDemoUITests;
+			productReference = 4D09633B26CC1F9D00EC8F5E /* NVTwitterDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D09631226CC1F9700EC8F5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4D09631926CC1F9700EC8F5E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					4D09632F26CC1F9D00EC8F5E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 4D09631926CC1F9700EC8F5E;
+					};
+					4D09633A26CC1F9D00EC8F5E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 4D09631926CC1F9700EC8F5E;
+					};
+				};
+			};
+			buildConfigurationList = 4D09631526CC1F9700EC8F5E /* Build configuration list for PBXProject "NVTwitterDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D09631126CC1F9700EC8F5E;
+			productRefGroup = 4D09631B26CC1F9800EC8F5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D09631926CC1F9700EC8F5E /* NVTwitterDemo */,
+				4D09632F26CC1F9D00EC8F5E /* NVTwitterDemoTests */,
+				4D09633A26CC1F9D00EC8F5E /* NVTwitterDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D09631826CC1F9700EC8F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D09632A26CC1F9C00EC8F5E /* LaunchScreen.storyboard in Resources */,
+				4DFD9B7826D14E1D00827DA0 /* MockTweets.json in Resources */,
+				4D09632726CC1F9C00EC8F5E /* Assets.xcassets in Resources */,
+				4D09632526CC1F9800EC8F5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D09632E26CC1F9D00EC8F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFD9B8E26D388F500827DA0 /* MockTweets.json in Resources */,
+				4DFD9B9426D38DD900827DA0 /* IncorrectMockTweets.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D09633926CC1F9D00EC8F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3671788D32CB3AC6E74FDB0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NVTwitterDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DFD9B8C26D2D60B00827DA0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		9D8EAE80E780912B8DD590D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NVTwitterDemo-NVTwitterDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6FC7F820E82F32BBDBFB16C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NVTwitterDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D09631626CC1F9700EC8F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D09635926CC216A00EC8F5E /* NVError.swift in Sources */,
+				4D09637326CC3C0A00EC8F5E /* NVFeedModel.swift in Sources */,
+				4D09635B26CC220200EC8F5E /* NVTweetListConfigurator.swift in Sources */,
+				4D09635D26CC221C00EC8F5E /* NVTweetListInteractor.swift in Sources */,
+				4D09636B26CC2DA300EC8F5E /* NVRequestFactory.swift in Sources */,
+				4DFD9B6D26CE79E700827DA0 /* NVMapRouter.swift in Sources */,
+				4DFD9B7B26D1538A00827DA0 /* NVTweetLocation.swift in Sources */,
+				4DFD9B7126CE7A1800827DA0 /* NVMapViewController.swift in Sources */,
+				4D09631E26CC1F9800EC8F5E /* AppDelegate.swift in Sources */,
+				4D09635726CC213F00EC8F5E /* NVAlertController.swift in Sources */,
+				4DFD9B8826D2CD9700827DA0 /* NVDeleteRuleRequest.swift in Sources */,
+				4DFD9B6926CE79C000827DA0 /* NVMapInteractor.swift in Sources */,
+				4DFD9B8A26D2CF6100827DA0 /* NVConnectStreamRequest.swift in Sources */,
+				4D09636526CC228A00EC8F5E /* NVTweetListViewController.swift in Sources */,
+				4DFD9B6B26CE79D000827DA0 /* NVMapView.swift in Sources */,
+				4D09636726CC229F00EC8F5E /* NVTweetListWorker.swift in Sources */,
+				4D09635526CC211400EC8F5E /* Reachability.swift in Sources */,
+				4DFD9B7326CE7A4400827DA0 /* NVMapWorker.swift in Sources */,
+				4D09636926CC268900EC8F5E /* NVConstants.swift in Sources */,
+				4DFD9B7726CE8C6E00827DA0 /* NVTweetParseHelper.swift in Sources */,
+				4D09632026CC1F9800EC8F5E /* SceneDelegate.swift in Sources */,
+				4DFD9B7E26D27D2100827DA0 /* NVAddRuleRequest.swift in Sources */,
+				4D09636D26CC2DF200EC8F5E /* NVRequestHandler.swift in Sources */,
+				4D09637126CC350B00EC8F5E /* NVTweetRuleModel.swift in Sources */,
+				4DFD9B6F26CE79FB00827DA0 /* NVMapPresenter.swift in Sources */,
+				4DFD9B8026D27D5100827DA0 /* NVApiRequestProtocol.swift in Sources */,
+				4D09637626CCD68000EC8F5E /* NVTweetCell.swift in Sources */,
+				4DFD9B8426D28BF800827DA0 /* NVTwitterService.swift in Sources */,
+				4DFD9B6726CE795A00827DA0 /* NVMapConfigurator.swift in Sources */,
+				4D09636126CC225000EC8F5E /* NVTweetListRouter.swift in Sources */,
+				4D09635F26CC223600EC8F5E /* NVTweetListPresenter.swift in Sources */,
+				4D09636F26CC2F2000EC8F5E /* NVRequestService.swift in Sources */,
+				4DFD9B8626D2A39300827DA0 /* NVGetRuleRequest.swift in Sources */,
+				4D09636326CC226700EC8F5E /* NVTweetListView.swift in Sources */,
+				4DFD9B7526CE817600827DA0 /* FileManager+Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D09632C26CC1F9D00EC8F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D91422926D39FDC00E7A56E /* NVTweetListInteractorMock.swift in Sources */,
+				4D91421E26D39E5600E7A56E /* NVTweetListInteractorTests.swift in Sources */,
+				4D91423B26D3CC2500E7A56E /* NVGetRuleRequestTests.swift in Sources */,
+				4D91422026D39E7F00E7A56E /* NVTweetListWorkerTests.swift in Sources */,
+				4D91423926D3CB2B00E7A56E /* NVAddRuleRequestTests.swift in Sources */,
+				4DFD9B9226D38A9800827DA0 /* MockHelper.swift in Sources */,
+				4D91423F26D3CD0400E7A56E /* NVConnectStreamRequestTests.swift in Sources */,
+				4D09633526CC1F9D00EC8F5E /* NVTwitterDemoTests.swift in Sources */,
+				4DFD9B9026D3891D00827DA0 /* NVTweetParseHelperTests.swift in Sources */,
+				4D91422D26D3A14700E7A56E /* NVTweetListRouterMock.swift in Sources */,
+				4D91423526D3CA5E00E7A56E /* NVTwitterServiceMock.swift in Sources */,
+				4D91422526D39EC200E7A56E /* NVTweetListWorkerMock.swift in Sources */,
+				4D91422B26D3A08800E7A56E /* NVTweetListViewControllerMock.swift in Sources */,
+				4D91423D26D3CC8600E7A56E /* NVDeleteRuleRequestTests.swift in Sources */,
+				4D91422726D39F6300E7A56E /* NVTweetListPresenterMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D09633726CC1F9D00EC8F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D09634026CC1F9D00EC8F5E /* NVTwitterDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D09633226CC1F9D00EC8F5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D09631926CC1F9700EC8F5E /* NVTwitterDemo */;
+			targetProxy = 4D09633126CC1F9D00EC8F5E /* PBXContainerItemProxy */;
+		};
+		4D09633D26CC1F9D00EC8F5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D09631926CC1F9700EC8F5E /* NVTwitterDemo */;
+			targetProxy = 4D09633C26CC1F9D00EC8F5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D09632326CC1F9800EC8F5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D09632426CC1F9800EC8F5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D09632826CC1F9C00EC8F5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D09632926CC1F9C00EC8F5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D09634226CC1F9D00EC8F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D09634326CC1F9D00EC8F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D09634526CC1F9D00EC8F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFA091EE97CB287EE399F0F9 /* Pods-NVTwitterDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVTwitterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVTwitterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D09634626CC1F9D00EC8F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9152A34F736B3EA93020C75B /* Pods-NVTwitterDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVTwitterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVTwitterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D09634826CC1F9D00EC8F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19C3E457D57C64B3EFFD3BB /* Pods-NVTwitterDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVTwitterDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVTwitterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NVTwitterDemo.app/NVTwitterDemo";
+			};
+			name = Debug;
+		};
+		4D09634926CC1F9D00EC8F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624D3C9E6599F1547175DBF9 /* Pods-NVTwitterDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVTwitterDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVTwitterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NVTwitterDemo.app/NVTwitterDemo";
+			};
+			name = Release;
+		};
+		4D09634B26CC1F9D00EC8F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00A286A3A5EF9E22FED1DA3 /* Pods-NVTwitterDemo-NVTwitterDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVTwitterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVTwitterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NVTwitterDemo;
+			};
+			name = Debug;
+		};
+		4D09634C26CC1F9D00EC8F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1806E848CB015955BE2AB0F0 /* Pods-NVTwitterDemo-NVTwitterDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NVTwitterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nv.NVTwitterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NVTwitterDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D09631526CC1F9700EC8F5E /* Build configuration list for PBXProject "NVTwitterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D09634226CC1F9D00EC8F5E /* Debug */,
+				4D09634326CC1F9D00EC8F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D09634426CC1F9D00EC8F5E /* Build configuration list for PBXNativeTarget "NVTwitterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D09634526CC1F9D00EC8F5E /* Debug */,
+				4D09634626CC1F9D00EC8F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D09634726CC1F9D00EC8F5E /* Build configuration list for PBXNativeTarget "NVTwitterDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D09634826CC1F9D00EC8F5E /* Debug */,
+				4D09634926CC1F9D00EC8F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D09634A26CC1F9D00EC8F5E /* Build configuration list for PBXNativeTarget "NVTwitterDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D09634B26CC1F9D00EC8F5E /* Debug */,
+				4D09634C26CC1F9D00EC8F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D09631226CC1F9700EC8F5E /* Project object */;
+}

@@ -1,0 +1,27 @@
+excluded:
+- Pods
+- NVTwitterDemo/Helper/Reachability.swift
+- NVTwitterDemoTests
+- NVTwitterDemoUITests
+
+opt_in_rules:
+  - block_based_kvo
+  - class_delegate_protocol
+  - contains_over_first_not_nil
+  - empty_count
+  - explicit_init
+  - fallthrough
+  - fatal_error_message
+  - first_where
+  - identical_operands
+  - joined_default_parameter
+  - modifier_order
+  - object_literal
+  - operator_usage_whitespace
+  - overridden_super_call
+  - private_outlet
+  - redundant_nil_coalescing
+  - toggle_bool
+  - unused_private_declaration
+  - force_cast
+  - force_try
